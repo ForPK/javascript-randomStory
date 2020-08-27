@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Random Story</title>
+
+    <style>
+      body {
+        font-family: helvetica, sans-serif;
+        width: 350px;
+      }
+
+      fieldset {
+        border: 0;
+      }
+
+      legend {
+        display: none;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      div {
+        padding-bottom: 20px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+
+      p {
+        background: #ffc125;
+        color: #5e2612;
+        padding: 10px;
+        visibility: hidden;
+      }
+    </style>
+
+    <script
+      defer
+      src="/Users/forpk/study/javascript-randomStory/randomStory.js"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <form id="form">
+      <fieldset>
+        <legend>story</legend>
+        <div>
+          <label for="name">너의 닉네임은? </label>
+          <input id="name" type="text" />
+        </div>
+
+        <div>
+          <label for="us">US</label
+          ><input id="us" type="radio" name="usuk" value="us" checked />
+          <label for="uk">UK</label
+          ><input id="uk" type="radio" name="usuk" value="uk" />
+        </div>
+
+        <button id="btn" type="submit">Generate Random Story</button>
+      </fieldset>
+    </form>
+
+    <p id="story"></p>
+  </body>
+</html>
